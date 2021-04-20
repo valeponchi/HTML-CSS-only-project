@@ -1,0 +1,150 @@
+.home-page {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(6, auto);
+  gap: 30px;
+  scroll-behavior: smooth;
+
+
+}
+
+/* HEADER___________________________  */
+header {
+  margin: 0 30px;
+  font-size: 1.2rem;
+  
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+header .logo {
+  display: grid;
+  justify-items: center;
+}
+
+header .logo img {
+  /* border: 1px solid blue; */
+  overflow: hidden;
+  width: 230px;
+}
+
+header nav {
+  display: grid;
+  align-content: center;
+}
+
+header ul {
+  margin: 0 100px;
+
+  display: grid;
+  grid-auto-flow: column;
+}
+
+header li {
+  height: 40px; /*so they won't move when hover*/
+  padding: 10px 0;  /*so they won't move when hover*/
+  place-items: center;
+  display: grid;
+  
+  /* background-color: rgb(243, 225, 167); */
+}
+
+header li a {
+  color: var(--primary-darker);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: grid;
+  justify-content: center;
+}
+
+/* .current-page  h2 {
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+} */
+
+header li:hover a {
+  color: var(--primary-dark);
+}
+
+header li:hover div {
+  background-color: var(--primary-dark);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.current-page  div {
+  background-color: var(--primary-dark);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+/* HERO SECTION ______________________ */
+.hero {
+  background-color: var(--primary-darker);
+  background-image: url(assets/img/hero.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 80px;
+  background-size: 950px;
+
+  height: 600px;
+  color: #fff;
+
+  display: grid;
+  place-items: center;
+}
+
+.hero .title {
+  display: grid;
+  justify-items: right;
+}
+
+/* .hero h1 {
+  font-size: 3rem;
+} */
+
+.hero small {
+  font-size: 1.5rem;
+}
+
+/* ABOUT US SECTION_______________________  */
+.about-us {
+  display: grid;
+  grid-template:
+  ". h3 ." auto
+  ". wrapper ." 1fr/
+  1fr 8fr 1fr;
+}
+
+.about-us h3 {
+  grid-area: h3;
+  /* margin-bottom: 30px; */
+  /* font-size: 2rem; */
+}
+
+.about-us-wrapper {
+  grid-area: wrapper;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.about-us-wrapper img{
+  width: 800px;
+}
+
+.about-us-text {
+  margin: 80px 40px;
+}
+
+
+/* .about-us-text h4 {
+  font-size: 1.5rem;
+} */
+
+.about-us-text p {
+  padding: 10px 0;
+}
