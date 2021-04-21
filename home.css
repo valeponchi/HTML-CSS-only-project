@@ -140,6 +140,11 @@ main {
   border-bottom: 1px solid var(--primary-darker);
 }
 
+.testimonials q {
+  color: var(--primary-darker);
+  font-weight: 600;
+}
+
 .t-title {
   grid-area: t;
 }
@@ -157,7 +162,7 @@ main {
 }
 
 .testimonial-wrapper img {
-  width: 100%;
+  width: 80%;
   /* height: 400px; */
 }
 
