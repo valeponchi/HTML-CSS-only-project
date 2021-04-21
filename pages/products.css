@@ -1,0 +1,36 @@
+
+
+/* MAIN________________________________________________  */
+main {
+  
+  background-color: #00ff0040;
+
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+
+  padding: 10px;
+
+  grid-auto-rows: 200px; */
+
+  overflow: scroll;
+
+  justify-content: center;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+
+  padding: 10px;
+
+  grid-auto-rows: 200px;
+}
+
+main .item {
+  border: solid 1px black;
+}
+
+
+
