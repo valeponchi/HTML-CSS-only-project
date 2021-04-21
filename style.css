@@ -62,6 +62,17 @@ h3 {
   font-size: 2rem;
 }
 
+h5 {
+  color: var(--primary-darker);
+  font-size: 1rem;
+}
+
+h6 {
+  color: var(--primary-darker);
+  font-size: 0.8rem;
+}
+
+
 /* HEADER_____________ */
 header {
   grid-area: header;

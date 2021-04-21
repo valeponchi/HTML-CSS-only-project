@@ -2,35 +2,74 @@
 
 /* MAIN________________________________________________  */
 main {
-  
-  background-color: #eee34bad;
+  /* background-color: #eee34bad; */
 
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px;
-
-  padding: 10px;
-
-  grid-auto-rows: 200px; */
-
   overflow: scroll;
-
-  justify-content: center;
 }
 
-.tables {
+/* main - nav ___________  */
+
+main nav ul {
+  /* background-color: #88d2e9ad; */
+
+  padding: 20px 0;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px;
+  grid-auto-flow: column;
+  justify-content: center;
 
-  padding: 10px;
-
-  grid-auto-rows: 200px;
+  gap: 50px;
 }
 
-main .item {
-  border: solid 1px black;
+main nav ul li a {
+  color: var(--primary-darker);
+  font-weight: 600;
 }
+
+main ul li a:hover {
+  color: var(--primary-dark);
+}
+
+/* main - wrapper with items _____________  */
+main .wrapper {
+  /* background-color: teal; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 40px;
+
+  padding: 0 20px;
+
+  grid-auto-rows: 500px;
+
+  /* justify-items: center; */
+  /* place-items: center; */
+}
+
+main h4 {
+  padding: 20px 90px;
+}
+
+main .wrapper .item {
+  /* border: solid 2px red; */
+  display: grid;
+  justify-items: center;
+}
+
+main .wrapper .img-text {
+  justify-self: left;
+  padding-left: 70px;
+}
+
+main .wrapper img {
+  width: 70%;
+}
+
+main section {
+  border-bottom: 2px solid var(--primary-darker);
+  margin: 5px 30px;
+}
+
 
 
 
