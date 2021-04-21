@@ -92,3 +92,71 @@ h4 {
 
   cursor: pointer;
 }
+
+/* HERADER_____________ */
+header {
+  margin: 15px 30px;
+  font-size: 1.2rem;
+  
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+header .logo {
+  display: grid;
+  /* justify-items: center; */
+}
+
+header .logo img {
+  overflow: hidden;
+  width: 300px;
+  /* border: 1px solid blue; */
+}
+
+header nav {
+  display: grid;
+  align-content: center;
+}
+
+header ul {
+  margin: 0 100px;
+
+  display: grid;
+  grid-auto-flow: column;
+}
+
+header li {
+  height: 40px; /*so they won't move when hover*/
+  padding: 10px 0;  /*so they won't move when hover*/
+  place-items: center;
+  display: grid;
+  
+  /* background-color: rgb(243, 225, 167); */
+}
+
+header li a {
+  color: var(--primary-darker);
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: grid;
+  justify-content: center;
+}
+
+header li:hover a {
+  color: var(--primary-dark);
+}
+
+header li:hover div {
+  background-color: var(--primary-dark);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.current-page  div {
+  background-color: var(--primary-dark);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
