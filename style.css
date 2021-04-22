@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 
 html {
@@ -9,6 +11,7 @@ html {
   --primary-dark: #c09711;
   --primary-darker: #917249;
   --primary-lighter: #eddca41e;
+  --primary-light-line: #eddca45d;
   --secondary: #C92828;
   --secondary-light: #fb1f79;
 
@@ -30,8 +33,6 @@ body {
     1fr;
   
   gap: 5px;
-
-  scroll-behavior: smooth;
 }
 
 /* BASE STYLING  */
@@ -126,6 +127,7 @@ header li:hover div {
   height: 10px;
   border-radius: 50%;
 }
+
 .current-page h2 {
   color: var(--primary-dark);
 }
@@ -157,8 +159,8 @@ footer {
   justify-content: center;
 }
 
-footer img:hover {
-}
+/* footer img:hover {
+} */
 
 /* UTILITY CLASSES */
 

@@ -4,15 +4,14 @@
 main {
   /* background-color: #eee34bad; */
 
-  display: grid;
+  /* display: grid; */
   overflow: scroll;
 }
 
-/* main - nav ___________  */
 
+/* main - nav __________________________________________  */
 main nav ul {
-  /* background-color: #88d2e9ad; */
-
+  /* background-color: coral; */
   padding: 20px 0;
 
   display: grid;
@@ -20,6 +19,8 @@ main nav ul {
   justify-content: center;
 
   gap: 50px;
+  border-bottom: 1px solid var(--primary-light-line);
+  border-top: 1px solid var(--primary-light-line);
 }
 
 main nav ul li a {
@@ -31,45 +32,49 @@ main ul li a:hover {
   color: var(--primary-dark);
 }
 
-/* main - wrapper with items _____________  */
-main .wrapper {
-  /* background-color: teal; */
+/* Main - articles section_______________________________ */
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.article {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 40px;
-
-  padding: 0 20px;
-
-  grid-auto-rows: 500px;
-
-  /* justify-items: center; */
-  /* place-items: center; */
+  grid-template-rows: auto 1fr;
 }
 
-main h4 {
-  padding: 20px 90px;
+.article h4 {
+  justify-self: center;
+  font-size: 2rem;
+  padding-top: 10px;
 }
 
-main .wrapper .item {
-  /* border: solid 2px red; */
+.article .cards {
+  padding: 20px;
+
   display: grid;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: start;
+  grid-gap: 20px;
 }
 
-main .wrapper .img-text {
-  justify-self: left;
-  padding-left: 70px;
+.card {
+  display: grid;
+  grid-template-rows: 350px 1fr;
+
+  border: solid 0.8px var(--primary-light-line);
+  border-radius: 5px;
+
+  /* box-shadow: 1px 1px 1px 0 var(--primary-light-line); */
 }
 
-main .wrapper img {
-  width: 70%;
+.card img {
+  object-fit: cover;
 }
 
-main section {
-  border-bottom: 2px solid var(--primary-darker);
-  margin: 5px 30px;
+.card .text {
+  padding: 10px;
+  justify-self: center;
 }
-
-
-
 
