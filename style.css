@@ -121,6 +121,10 @@ header li:hover a {
   color: var(--primary-dark);
 }
 
+header li:hover svg {
+  stroke: var(--primary-dark);
+}
+
 header li:hover div {
   background-color: var(--primary-dark);
   width: 10px;
@@ -130,6 +134,10 @@ header li:hover div {
 
 .current-page h2 {
   color: var(--primary-dark);
+}
+
+.current-page svg {
+  stroke: var(--primary-dark);
 }
 
 .current-page  div {
@@ -154,13 +162,19 @@ main {
 /* FOOTER_______  */
 footer {
   grid-area: footer;
-  margin: 5px;
+  padding-bottom: 8px;
   display: grid;
   justify-content: center;
 }
 
-/* footer img:hover {
-} */
+footer .fb svg:hover {
+  stroke: rgb(74, 123, 212);
+}
 
-/* UTILITY CLASSES */
+footer .ig svg:hover {
+  stroke: rgb(180, 21, 180);
+}
+/* radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) */
+/* radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+
 
