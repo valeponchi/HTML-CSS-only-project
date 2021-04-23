@@ -30,7 +30,8 @@
         </li>
         <li>
           <a href="/pages/basket.html">
-            <span><svg xmlns="http://www.w3.org/2000/svg" 
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" 
                  width="24" 
                  height="24" 
                  viewBox="0 0 24 24" 
@@ -40,8 +41,9 @@
                  stroke-linecap="round" 
                  stroke-linejoin="round" 
                  class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-            </svg></span>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg> <span class="basket-number" >&#8317; 2 &#8318;</span>
+            </span>
           </a>
           <div></div>         
         </li>
@@ -110,69 +112,112 @@
 
 <!-- TESTIMONIALS SECTION________________OUR CLIENTS___________________________  -->
 
-  <section class="articles-section">
+    <section class="articles-section">
 
-    <article class="article dining-tables-section">
-      <h3>Our Clients</h3>
+      <article class="article dining-tables-section">
+        <h3>Our Clients</h3>
 
-      <section class="cards">
-        <article class="card">
-          <div >
-            <img src="/assets/img/testimonials/client-man-2.jpeg" alt="client photo">
-          </div>
-          <div class="text">
-            <em><q>The quality of their furniture is incredible!</q></em>
-          </div>
-        </article>
+        <section class="cards">
+          <article class="card">
+            <div >
+              <img src="/assets/img/testimonials/client-man-2.jpeg" alt="client photo">
+            </div>
+            <div class="text">
+              <em><q>The quality of their furniture is incredible!</q></em>
+            </div>
+          </article>
 
-        <article class="card">
-          <div>
-            <img src="/assets/img/testimonials/client2.jpeg" alt="client photo">
-          </div>
-          <div class="text">
-            <em><q>I've been looking for something like this. I finally found it!</q></em>
-          </div>
-        </article>
+          <article class="card">
+            <div>
+              <img src="/assets/img/testimonials/client2.jpeg" alt="client photo">
+            </div>
+            <div class="text">
+              <em><q>I've been looking for something like this. I finally found it!</q></em>
+            </div>
+          </article>
 
-        <article class="card">
-          <div>
-            <img src="/assets/img/testimonials/client3.jpeg" alt="client photo">
-          </div>
-          <div class="text">
-            <em><q>I have the best-looking living room amongst my friends.</q></em>
-          </div>
-        </article>
-      </section>
+          <article class="card">
+            <div>
+              <img src="/assets/img/testimonials/client3.jpeg" alt="client photo">
+            </div>
+            <div class="text">
+              <em><q>I have the best-looking living room amongst my friends.</q></em>
+            </div>
+          </article>
+        </section>
 
-          <!-- <div class="client">
-            <img src="/assets/img/testimonials/client-man-2.jpeg" alt="client">
+            <!-- <div class="client">
+              <img src="/assets/img/testimonials/client-man-2.jpeg" alt="client">
+            </div>
+            <span>
+              <em><q>I have the best-looking living room amongst my friends.</q></em>
+            </span>
+        </div>
+
+        <div class="client-2 testimonial-wrapper">
+          <div class="client">
+            <img src="/assets/img/testimonials/client2.jpeg" alt="client">
           </div>
           <span>
             <em><q>I have the best-looking living room amongst my friends.</q></em>
           </span>
-      </div>
-
-      <div class="client-2 testimonial-wrapper">
-        <div class="client">
-          <img src="/assets/img/testimonials/client2.jpeg" alt="client">
         </div>
-        <span>
-          <em><q>I have the best-looking living room amongst my friends.</q></em>
-        </span>
-      </div>
 
-      <div class="client-3 testimonial-wrapper">
-        <div class="client">
-          <img src="/assets/img/testimonials/client3.jpeg" alt="client">
-        </div>
-        <span>
-          <q><em>I have the best-looking living room amongst my friends.</em></q>
-        </span>
-      </div>  -->
+        <div class="client-3 testimonial-wrapper">
+          <div class="client">
+            <img src="/assets/img/testimonials/client3.jpeg" alt="client">
+          </div>
+          <span>
+            <q><em>I have the best-looking living room amongst my friends.</em></q>
+          </span>
+        </div>  -->
     </section> 
 
-    
-    <section id="contact-us" class="contact-us">Contact US</section>
+<!-- SUBSCRIPTION AND CONTACT US_________________________________________ -->
+
+    <section id="contact-us" class="contact-us only-index">
+        <form class="form" action="/pages/thankyoupage.html">
+          <div class="top margin-b">
+            <h4>Join the SCANDI Family for free! Member discounts - because members deserve more</h4>
+            <h6>By subscribing you agree to our <a href="#">Terms&Conditions</a> and <a href="#">Privacy & Cookies Policy</a></h6>
+          </div>
+          <div class="middle margin-b">
+            <label class="aspect" for="email">Email </label>
+            <input id="email" type="email" required placeholder="Your email">
+            <label class="aspect" for="name">Name </label>
+            <input type="text" required  id="name" placeholder="Name" minlength="3" maxlength="20">
+            <label class="aspect" for="lastname">Last Name 
+            <input type="text" required  id="lastname" placeholder="Last Name" minlength="3" maxlength="20">
+            </label> 
+          </div>
+          <label class="aspect margin-b">Birthdate
+           <input required class="aspect" type="date" name="birthday" value="2021-04-23" max="2003-04-23">
+          </label>
+          <div class="subscription margin-b">
+            <label class="aspect" for=""> 
+              <input class="aspect" type="radio"> Yes, I want to enjoy rewards, discounts and a lot more! <a href="#">Get the details</a>
+            </label> <br>
+            <label class="aspect" for=""> 
+              <input class="aspect" type="radio"> No, thanks, I just want to create a SCANDI account today. Maybe another day. <a href="#">Get the details</a>    
+            </label>
+            <button class="aspect button">Join</button>
+          </div>
+        </form>
+  
+        <section id="contact-us" class="contact-us">
+          <form class="form num-email" action="/index.html">
+            <div class="top margin-b">
+              <h4>Contact us!</span></h4>
+            </div>
+            <div class="middle">
+              <h5>For any question <br> you can always contact us via email</h5> 
+              <a href="#"><h5>asd@asd</h5></a>
+              <h5 class="margin-b">or call us &phone; 01234 5678910</h5>
+            </div>
+          </form>
+        </section>
+    </section>
+
     <a class="back-to-top-link" href="#top-of-the-page">Back to top</a>
   </main>
   

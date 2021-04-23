@@ -24,7 +24,7 @@
         <li><a href="/pages/products.html">Products</a>
           <div></div>
         </li>
-        <li><a href="#contact-us">Contact Us</a>
+        <li><a href="/index.html#contact-us">Contact Us</a>
           <div></div>
         </li>
         <li class="current-page">
@@ -40,7 +40,7 @@
                 stroke-linejoin="round" 
                 class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-              </svg>
+              </svg> <span class="basket-number" >&#8317; 2 &#8318;</span>
             </span>
           <div></div>         
         </li>
@@ -48,7 +48,60 @@
     </nav>
   </header>
 
-  <main>m
+  <main>    
+    <section class="basket contact-us">
+      <form class="form" action="/pages/thankyou-for-shopping.html">
+        <div class="top margin-b">
+          <h3>Basket</h3>
+        </div>
+        <div class="middle margin-b cards">
+          <div class="card">
+            <img src="/assets/img/products/coffee-tables/coffee-table-1.jpg" alt="coffee-table-1">
+            <h5 class="margin-b">Quantity: 1</h5>
+          </div>
+          <div class="card">
+            <img src="/assets/img/products/coffee-tables/coffee-table-2.jpg" alt="coffee-table-1">
+            <h5 class="margin-b">Quantity: 1</h5>
+          </div>
+          <h4>Total: £125.00</h4>
+        </div>
+        <div class="subscription margin-b">
+          <button class="aspect button margin-b">Buy</button>
+          <h6 class="margin-b">By buying something with us you agree to our <a href="#">Terms&Conditions</a> and <a href="#">Privacy & Cookies Policy</a></h6>
+        </div>
+      </form>
+    </section>
+    
+    <section id="contact-us" class="contact-us">
+      <form class="form" action="/pages/thankyoupage.html">
+        <div class="top margin-b">
+          <h4>Join the SCANDI Family for free! Member discounts - because members deserve more</h4>
+          <h6>By subscribing you agree to our <a href="#">Terms&Conditions</a> and <a href="#">Privacy & Cookies Policy</a></h6>
+        </div>
+        <div class="middle margin-b">
+          <label class="aspect" for="email">Email </label>
+          <input id="email" type="email" required placeholder="Your email">
+          <label class="aspect" for="name">Name </label>
+          <input type="text" required  id="name" placeholder="Name" minlength="3" maxlength="20">
+          <label class="aspect" for="lastname">Last Name 
+          <input type="text" required  id="lastname" placeholder="Last Name" minlength="3" maxlength="20">
+          </label> 
+        </div>
+        <label class="aspect margin-b">Birthdate
+         <input required class="aspect" type="date" name="birthday" value="2021-04-23" max="2003-04-23">
+        </label>
+        <div class="subscription margin-b">
+          <label class="aspect" for=""> 
+            <input class="aspect" type="radio"> Yes, I want to enjoy rewards, discounts and a lot more! <a href="#">Get the details</a>
+          </label> <br>
+          <label class="aspect" for=""> 
+            <input class="aspect" type="radio"> No, thanks, I just want to create a SCANDI account today. Maybe another day. <a href="#">Get the details</a>    
+          </label>
+          <button class="aspect button">Join</button>
+        </div>
+      </form>
+    </section>
+
     <a class="back-to-top-link" href="#top-of-the-page">Back to top</a>
 
   </main>
@@ -69,7 +122,6 @@
              class="feather feather-facebook">
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
         </svg>
-        <!-- <img src="/assets/img/facebook-brown.svg" alt="Facebook"> -->
       </a>
 
       <a class="ig" href="#">
@@ -91,8 +143,6 @@
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
         </svg>
-
-        <!-- <img src="/assets/img/instagram-brown.svg" alt="Instagram"> -->
       </a>
     </div>
   </footer>

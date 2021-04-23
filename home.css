@@ -182,47 +182,20 @@ main {
   justify-self: center;
 }
 
-
-
-
-/* contact us- subscription___________________________________  */
+/* SUBSCRIPTION AND CONTACT US BOXES _ HOME PG________ */
 .contact-us {
-  height: 200px;
-  background-color: rgba(172, 252, 252, 0.664);
+  /* background-color: rgba(172, 252, 252, 0.664); */
+  display: grid;
+  /* place-items: center; */
+  margin-bottom: 50px;
 }
 
-
-
-/* back to top button _______________________________*/
-.back-to-top-link {
-  position: sticky;
-  transform: translateX(60px);
-  
-  border: 3px solid var(--primary);
-  padding: 0.57rem 0.625rem;
-  border-radius: 100px;
-  box-shadow: inset 0 0 0 0.1rem var(--primary-dark), inset 0 0 0 0.2rem #ffffff, 0 4px 12px #00000022;
-  
-  background-color: var(--primary);
-  
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.5rem;
-  font-weight: 800;
-  color: var(--primary-darker);
-  
-  z-index: 100;
-  bottom: 40px;
-  left: 85vw;
-  height: 50px;
-  width: 50px;
-
-  cursor: pointer;
+.only-index {
+  grid-auto-flow: column;
+  margin: 50px 100px;
 }
 
-.back-to-top-link:hover { 
-  background-color: var(--primary-lighter);
-  color: var(--primary-dark);
-  }
-
-
+.num-email {
+  padding: 20px;
+  align-self: center;
+}
