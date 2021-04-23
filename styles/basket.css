@@ -1,0 +1,12 @@
+.basket h3 {
+  border-bottom: 2px solid var(--primary-light-line);
+}
+
+.basket img {
+  width: 150px;
+}
+
+.basket h4 {
+  text-decoration-line: underline;
+}
+
